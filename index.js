@@ -23,3 +23,17 @@ let changeaddress = function(){
     changeAddressNode.innerHTML = "New Block University Stockholm Sweden"
 
 } 
+
+
+let addCssToLink = function(){
+
+    let addCssToLinkNode = document.getElementsByTagName("a")
+    
+    for(let addCss of addCssToLinkNode)
+
+       addCss.classList.add("colortolink")
+
+
+}
+
+
