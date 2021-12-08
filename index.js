@@ -36,4 +36,29 @@ let addCssToLink = function(){
 
 }
 
+const priceColorFunc = function(){
+
+    
+    
+    const priceNodes = document.getElementsByClassName("price")
+        const randomColor = generateRandomColor()
+        for(priceNode of priceNodes) {
+            priceNode.style.backgroundColor = randomColor
+        }
+    
+    }
+    
+    const random255 = () => {
+        return Math.round(Math.random() * 255)
+    }
+    
+    const generateRandomColor = function() {
+        // rgb(255,255,255)
+        const red = random255()
+        const green = random255()
+        const blue = random255()
+    
+        return rgb(${red}, ${green}, ${blue})
+    }
+
 
